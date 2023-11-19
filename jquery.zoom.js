@@ -117,6 +117,8 @@
 			img.onload = function () {
 				var zoom = $.zoom(target, source, img, settings.magnify);
 
+				source.zoom = zoom;
+
 				function start(e) {
 					zoom.init();
 					zoom.move(e);
